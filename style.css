@@ -1,0 +1,77 @@
+/* Les couleurs de la charte Toys and Models, définies une seule fois */
+:root {
+  --fond-page: #1E1E1E;
+  --fond-carte: #3A3A3A;
+  --texte: #FFFFFF;
+  --texte-discret: #D2D0CE;
+  --turquoise: #0EB194;
+  --bleu: #70B0E0;
+  --ambre: #FCB714;
+}
+
+/* Style global du corps de la page */
+body {
+  background-color: var(--fond-page);
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 40px;
+  color: var(--texte);
+}
+
+/* Style des titres principaux */
+h1 {
+  font-family: "Segoe UI Semibold", "Segoe UI", Arial, sans-serif;
+  font-size: 32px;
+  text-align: left;
+  color: var(--texte);
+  border-bottom: 2px solid var(--turquoise);
+  padding-bottom: 10px;
+}
+
+/* Style des sous-titres */
+h2 {
+  font-family: "Segoe UI Semibold", "Segoe UI", Arial, sans-serif;
+  font-size: 24px;
+  color: var(--texte);
+  margin-top: 0;
+}
+
+/* Style des paragraphes */
+p {
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* Listes : même taille de texte que les paragraphes */
+li {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Style des liens */
+a {
+  color: var(--turquoise);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Style au survol du curseur sur les liens */
+a:hover {
+  color: var(--ambre);
+  text-decoration: underline;
+}
+
+/* Carte : comme tes visuels Power BI (gris #3A3A3A, coins arrondis 15 px, remplissage 15 px) */
+.carte {
+  background-color: var(--fond-carte);
+  border: 1px solid var(--fond-carte);
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Images : ne dépassent jamais de leur carte, coins arrondis comme les cartes */
+img {
+  max-width: 100%;
+  border-radius: 15px;
+}
